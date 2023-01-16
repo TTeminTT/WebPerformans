@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="resmim" src="img/play-button-arrowhead.png" width="100px" height="100px" >
+    <audio id="mySong" src="mp3indirdur-Sibel-Can-Padisah.mp3" type="audio/mp3" ></audio>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("resmim");
+        icon.onclick=function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src="img/video-pause-button.png"
+            }
+            else{
+                mySong.pause();
+                icon.src="img/play-button-arrowhead.png"
+            }
+        }
+    </script>
+</body>
+</html>
